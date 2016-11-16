@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Croppie</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">  
+  <script type="text/javascript" src="bower_components/Croppie/croppie.js"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/Croppie/croppie.css">
 </head>
 <body>
 
-<form>
+<!-- <form> -->
   <div id="upload-demo"></div>
-  <input type="file" id="imgUpload" accept="image/jpeg">
-  <button type="submit">Send</button>
-</form>
+  <input type="file" id="imgUpload" value="Choose a file" accept="image/jpeg">
+  <button id="cropUpload" >Send</button>
+<!-- </form> -->
+
+<script type="text/javascript" src="demo.js"></script>
+<script type="text/javascript">
+    Demo.init()
+</script>
+
 </body>
 </html>
