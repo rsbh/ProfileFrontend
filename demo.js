@@ -55,9 +55,17 @@ var Demo = (function() {
                 type: 'blob',
                 format: 'jpeg'
             }).then(function(output){
-                blobTobuffer(output, function(buf){
-                    console.log(buf)
-                })
+
+                var formData = new FormData();
+                formData.append("blob",output, "crop.jpg");
+
+
+                var request = new XMLHttpRequest();
+                request.open("POST", "http://192.168.42.119:8080/image");
+                request.send(formData);
+                // blobTobuffer(output, function(buf){
+                //     console.log(buf)
+                // })
             })
         })
 
