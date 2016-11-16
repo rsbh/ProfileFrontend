@@ -1,0 +1,10 @@
+
+#upload-demo{
+  position: relative;
+  top:5px;
+  left:20px;
+  height: 400px;
+  width: 600px;
+  margin-bottom: 10px;
+  background-color: grey;
+}
