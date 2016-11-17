@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Edit Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="croppie.js"></script>
+    <link rel="stylesheet" type="text/css" href="croppie.css">
+</head>
+
+<body>
+    <div id="header">
+
+        <ul>
+            <li>
+                <a class="active" href="#home"><img src="image/logo.png" style="margin:-10px;" /> Home</a>
+            </li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+        </ul>
+
+    </div>
+    <div id="form">
+        <label class="form-label">First Name: </label><input type="text" id="fname" name="fname" placeholder="First Name"></br>
+        <label class="form-label">Last Name : </label><input type="text" id="lname" name="lname" placeholder="Last Name"></br>
+        <label class="form-label">Email : </label><input type="email" id="email" name="email" placeholder="Email"></br>
+        <label class="form-label">Upload Profile : </label><input type="file" id="imgUpload" value="Choose a file" accept="image/jpeg"></br>
+        <label class="form-label">Contact Address: </label><textarea name="contactAddress" id="contactAddress" rows="5" placeholder="Contact Address"></textarea></br>
+        <label class="form-label">Hometown : </label><input type="text" id="hometown" name="hometown" placeholder="Home Town"></br>
+        <label class="form-label">Date of Birth : </label><input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY"></br>
+        <label class="form-label">Date of Joining : </label><input type="text" id="doj" name="doj" placeholder="DD/MM/YYYY"></br>
+        <label class="form-label">ID Proof : </label><input type="file" id="idproof" name="idproof" value="Choose a file" accept="application/pdf"></br>
+        <label class="form-label">Address Proof : </label><input type="file" id="adproof" name="adproof" value="Choose a file" accept="application/pdf"></br>
+
+        <button id="sendButton">Send</button>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="upload-demo"></div>
+            </div>
+            <div class="modal-footer">
+                <button id="cropUpload">Crop</button>
+                <button class="close">Close</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        Demo.init()
+    </script>
+</body>
+
+</html>
